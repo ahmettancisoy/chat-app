@@ -1,0 +1,37 @@
+------------------------------------------------- MESAJLAŞMA ----------------------------------------------------------
+
+React local storage ile görüşmeler kaydedilir
+Her mesaj gönderildiğinde veritabanına kayıt gerçekleşir
+Uygulama açıldığında local de kayıtlı olan dosyalar kontrol edilir, bir gün öncesine ait mesajlar local den silinir
+Mesajlarda geriye gidildikçe son 10 mesaj veritabanından çekilip locale yüklenir
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------- İŞLEV ---------------------------------------------------------------
+
+Login : Mail ve şifre ile giriş, forgot password
+
+Mesajlaşma
+    Kişiler
+    Mesajlar
+    Yeni Kişi Ekle : Mail ile ekleme, isim verme, isim verilmemişse eklenen kişinin kendi adı veya maili görünür
+    Emoji
+    Dosya paylaşımı : Resim önizleme
+
+Profil : İsim, Şifre düzenle, mail read only, resim ekleme
+
+Durum : Çevrimiçi olduğunda gözükecek
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------- ADMIN ---------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+Proje tasarım başlangıç tarihi : 28.02.2023
