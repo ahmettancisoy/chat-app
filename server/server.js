@@ -80,9 +80,6 @@ io.on("connection", async (socket) => {
       conversation.participants.forEach((participant) => {
         if (participant !== newMessageReceived.sender._id) {
           if (socketNames.includes(participant)) {
-            socket
-              .in(conversation._id)
-              .emit("message received", newMessageReceived);
             notification.isActive = true;
           } else {
             notification.isActive = false;
@@ -91,6 +88,9 @@ io.on("connection", async (socket) => {
         }
       });
     }
+    socket.broadcast
+      .to(conversation._id)
+      .emit("message received", newMessageReceived);
   });
 
   socket.on("typing", (conversationId) =>

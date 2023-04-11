@@ -27,6 +27,7 @@
 /client/yarn-error.log*
 
 # server
+/server/public/images/profiles
 # dependencies
 /server/node_modules
 /server/.pnp
