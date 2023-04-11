@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import useAuth from "../../hook/useAuth";
 import { socket } from "../../socket";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUsers } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = ({
   details,
@@ -84,14 +86,21 @@ const Contact = ({
           </span>
         )}
         <div className="mr-3 rounded-full overflow-hidden ring-1 ring-gray-100 group-hover:ring-blue-200 w-10 h-10 flex justify-center items-center">
-          <img
-            src={
-              participantPic
-                ? `${process.env.REACT_APP_SERVER_URL}/images/profiles/${participantPic}`
-                : "/images/no-profile-picture.svg"
-            }
-            alt="contact-profile"
-          />
+          {isGroupChat ? (
+            <FontAwesomeIcon
+              icon={faUsers}
+              className="text-gray-400 bg-gray-300 h-[calc(100vh-280px)] text-center w-full"
+            />
+          ) : (
+            <img
+              src={
+                participantPic
+                  ? `${process.env.REACT_APP_SERVER_URL}/images/profiles/${participantPic}`
+                  : "/images/no-profile-picture.svg"
+              }
+              alt="contact-profile"
+            />
+          )}
         </div>
         <div className="truncate max-w-[120px]">
           <h5 className="font-medium text-sm">
