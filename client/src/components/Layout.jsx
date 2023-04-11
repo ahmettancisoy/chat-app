@@ -128,8 +128,7 @@ const Layout = () => {
       setMessages(response.data.reverse());
       setLeaveConversation(conversation);
 
-      if (response.data.length > 0 && response.data[0].conversation.isGroupChat)
-        socket.emit("join conversation", conversation, leaveConversation);
+      socket.emit("join conversation", conversation, leaveConversation);
     } catch (err) {
       console.error(err);
     }

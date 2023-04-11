@@ -47,7 +47,6 @@ io.on("connection", async (socket) => {
   });
 
   socket.on("new conversation", (newConversationReceived, fromId) => {
-    console.log(newConversationReceived);
     newConversationReceived.participants.forEach((participant) => {
       if (participant._id !== fromId) {
         socket
@@ -105,7 +104,6 @@ io.on("connection", async (socket) => {
   const getSocketNames = (roomName) => {
     const socketsInRoom = io.sockets.adapter.rooms.get(roomName);
     const socketIdsArray = Array.from(socketsInRoom);
-
     const socketNamesInRoom = socketIdsArray.map((socketId) => {
       const socket = io.sockets.sockets.get(socketId);
       return socket.name;
