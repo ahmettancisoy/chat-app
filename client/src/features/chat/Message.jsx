@@ -25,7 +25,7 @@ const Message = ({
             src={
               showProfilePic && isGroup && pic
                 ? `${process.env.REACT_APP_SERVER_URL}/images/profiles/${pic}`
-                : showProfilePic && "/images/no-profile-picture.svg"
+                : "/images/no-profile-picture.svg"
             }
           />
         </div>
