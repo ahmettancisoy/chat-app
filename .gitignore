@@ -7,6 +7,7 @@
 /client/node_modules
 /client/.pnp
 /client/.pnp.js
+/client/.env
 
 # testing
 /client/coverage
@@ -32,6 +33,7 @@
 /server/node_modules
 /server/.pnp
 /server/.pnp.js
+/server/.env
 
 # testing
 /server/coverage
