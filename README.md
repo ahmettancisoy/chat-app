@@ -14,7 +14,7 @@ This is a web application that allows you to create conversations with other use
 - Socket.io
 
 ## Installation
-To run this application on your machine, you need to have Node.js and MongoDB installed. Here are the steps:
+> 🚧 To run this application on your machine, you need to have [Node.js](https://nodejs.org/en/) and [MongoDB](https://www.mongodb.com) installed. Here are the steps:
 
 1. Clone this repository to your local machine using
 ```
