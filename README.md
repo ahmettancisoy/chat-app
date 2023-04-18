@@ -18,7 +18,7 @@ This is a web application that allows you to create conversations with other use
 
 1. Clone this repository to your local machine using
 ```
-git clone https://github.com/ahmettancisoy/chat-app.git.
+git clone https://github.com/ahmettancisoy/chat-app.git
 ```
 
 2. Install the dependencies in the both client and server folders.
