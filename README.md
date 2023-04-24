@@ -41,12 +41,12 @@ REACT_APP_SERVER_URL=http://localhost:4000
 ```
 
 ## Running
-1. Run server
+1. Run client
 ```
 npm start
 ```
 
-2. Run client
+2. Run server
 ```
 nodemon server
 ```
